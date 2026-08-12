@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background-color: aquamarine;
+}
+
+body {
+    background: url("background-image.jpg");
+    opacity: 0.75;
+    height: 100vh;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.all-body-part {
+    background: linear-gradient(217deg, pink, rgb(255, 167, 181), rgb(254, 108, 133));
+    padding: 10px;
+    height: 198vh;
+}
+
+.border-box {
+    border: 2px dotted maroon;
+    height: 165vh;
+    border-radius: 15px;
+}
+
+.heading {
+    text-align: center;
+
+}
+
+.heading h2 {
+    color: maroon;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: unset;
+    font-size: 29px;
+    text-shadow: 3px 3px 3px rgba(71, 5, 5, 0.644);
+}
+
+.heading-second {
+    padding: 50px 0px 0px 20px;
+}
+
+.heading-second h4 {
+    color: rgb(137, 21, 21);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.first-para {
+    padding: 5px 0px 0px 130px;
+
+}
+
+.first-para-letter {
+    color: rgb(137, 21, 21);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+}
+
+.second-para-letter {
+    color: rgb(137, 21, 21);
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.third-para {
+    padding-left: 100px;
+    padding-top: 3px;
+}
+
+.third-para-letter {
+    color: rgb(137, 21, 21);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+}
+
+.fourth-para-letter {
+    color: rgb(137, 21, 21);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+}
+
+.last-para {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.last-para h5 {
+    color: maroon;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 2px 2px 3px rgba(52, 4, 4, 0.677);
+    text-decoration: underline;
+    padding-right: 5px;
+}
+
+.footer-box {
+    border: 2px dashed maroon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.footer-box h5 {
+    color: maroon;
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: underline;
+}
+
+.question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    
+}
+.question a{
+    text-decoration: none;
+}
+.question a button{
+    background:linear-gradient(310deg,rgb(223, 113, 113),rgb(247, 99, 99),rgb(249, 57, 57));
+    border: 2px solid maroon;
+    padding: 10px 25px;
+    border-radius: 20px;
+    color: maroon;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 900;
+  box-shadow: 1px 2px 4px 3px maroon;
+}
+.answer::after{
+    content: "💖";
+    position: absolute;
+    opacity: 0.4;
+    left: 20%;
+    animation: floatheart 2s linear infinite alternate;
+}
+@keyframes floatheart {
+    100%{
+        transform: translateY(-8px) rotate(160deg);
+    }
+    
+}
